@@ -1,0 +1,26 @@
+/* ---------carousel------------*/ 
+
+.awards{
+    padding: 8rem 3rem;
+}
+
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    width: 25%;
+    cursor: grab;
+    
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.members {
+    padding: 8rem 1rem ;
+}
+
+/* ---xxx------carousel-----xx-------*/ 

@@ -1,0 +1,137 @@
+/*-----about-------------*/
+
+.about {
+    padding: 15rem 1rem 5rem;
+    font-size: 1.5rem;
+    z-index: 2;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem 1rem 5rem;
+    }
+
+    &__left-part {
+        padding: 0;
+    }
+
+    &__content {
+        box-shadow: 0 10px 59px rgba(#000, 0.3);
+        padding: 5rem 4rem;
+        background: #fff;
+        width: 70%;
+        z-index: 3;
+        margin-top: -25rem;
+        position: relative;
+        margin-left: 5rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 4rem 3rem;
+            background: #fff;
+            width: 81%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 1rem;
+            box-shadow: none;
+            padding: 4rem 1rem;
+        }
+        @media only screen and (max-width: $bp-xsmall) {
+            z-index: 0;
+        }
+    }
+
+    &__images {
+        padding: 2rem;
+        background: rgba(#5346ef, 0.1);
+        width: 40rem;
+        height: 50rem;
+        position: relative;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 4rem 3rem;
+            background: #fff;
+            width: 81%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 50vh;
+        }
+
+        &-real {
+            width: 35rem;
+            z-index: 2;
+            position: absolute;
+            top: -5rem;
+            left: -3rem;
+
+            @media only screen and (max-width: $bp-small) {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 80%;
+            }
+
+            @media only screen and (max-width: $bp-xsmall) {
+                z-index: 0;
+            }
+        }
+    }
+}
+
+.counter {
+    background: rgba(#2557ff, 0.04);
+
+    &__content {
+        padding: 8rem 2rem;
+    }
+
+    &__rows {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+
+    &__items {
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            margin: 3rem 0;
+            align-items: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__number {
+        color: #7a50ff;
+        font-size: 3.5rem;
+        font-family: "metropolis-bold";
+        text-align: center;
+    }
+
+    &__name {
+        font-family: "metropolis-bold";
+        text-align: center;
+        color: #404040;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+/*---xx--about-------xx------*/

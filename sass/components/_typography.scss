@@ -1,0 +1,66 @@
+/* ---------heading-typography------------*/ 
+
+.heading {
+    &__secondary {
+        font-size: 3.2rem;
+        margin-bottom: 4rem;
+        position: relative;
+        padding-bottom: 2rem;
+        font-family: "metropolis-bold";
+        color: #404040;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            text-align: center;
+          
+         }
+
+        &::after {
+            width: 10rem;
+            height: 0.7rem;
+            content: "";
+            position: absolute;
+            left: 0%;
+            bottom: 0;
+            background: rgba(#7a50ff, 5.3);
+
+            @media only screen and (max-width: $bp-xsmall) {
+                left: 43%;
+
+              
+             }
+        }
+    }
+}
+/* ---xxx------heading-typography-----xx-------*/ 
+
+/* ---------paragraph-typography------------*/ 
+
+
+.paragraph {
+    font-family: "metropolis-medium";
+
+    margin-bottom: 4rem;
+
+    &--about {
+        line-height: 3.5rem;
+        font-size: 2rem;
+    }
+
+    &--projects {
+        line-height: 3.9rem;
+        font-size: 2.2rem;
+        margin-top: 3rem;
+        padding: 2rem 10rem 3rem 0rem;
+        @media only screen and (max-width: $bp-largest) {
+            padding: 2rem 0rem 3rem 0rem;
+        }
+    }
+
+    &--services {
+        line-height: 3.5rem;
+        font-size: 2rem;
+    }
+}
+
+/* ----xx-----paragraph-typography---xx---------*/ 
+
