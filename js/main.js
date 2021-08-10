@@ -90,6 +90,11 @@ const imagesSwiper = new Swiper(".images-wrapper .images-swiper", {
     },
     allowTouchMove: false,
     loop: true,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+    }
 });
 
 
